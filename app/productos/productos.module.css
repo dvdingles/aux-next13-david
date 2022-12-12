@@ -1,0 +1,30 @@
+.productos{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+.nave {
+  position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  z-index: -1;
+  transition: all 5s ease;
+  
+}
+
+.nave :hover{
+  transform: scale(88%) ;
+  filter: blur(88%);
+}
+
+.parrafo{
+    color: red;
+    position: absolute;
+    top: 4rem;
+    margin: 3rem
+}

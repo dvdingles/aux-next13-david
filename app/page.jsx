@@ -39,18 +39,11 @@ export default function Home() {
         </div>
       </main>
 
-      <video className={styles.video} autoPlay muted loop>
-        <source src='../public/1.mp4' type='video/mp4'/>
+      <video className={styles.video} preload='true' muted autoPlay loop>
+        <source src='/cajas.mp4' type='video/mp4'/>
       </video>
 
-      {/* <video src="../public/1.mp4" className={styles.video} autoPlay muted loop></video> */}
-
-      <div className={styles.capa}>
-
-      
-      
-      </div>
-
+      <div className={styles.capa} />
 
     </div>
   )
