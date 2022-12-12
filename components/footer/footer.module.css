@@ -1,0 +1,17 @@
+.footer{
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    border-top: solid 1px blue;
+    display: flex;
+    justify-content: center;
+    font-family: var(--tipo-principal);
+    font-weight: 800;
+    color: red;
+    background-color: silver;
+}
+
+.footer a{
+    border: solid 1px black;
+    cursor: pointer;
+}

@@ -1,18 +1,25 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@font-face {
+  font-family: 'ITC Eras Demi';
+  src: url('/ITC Eras Demi.ttf');
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
+:root{  
+    
+  --negro     : rgb(39, 39, 39);
+  --blanco    : rgb(222,222,222);
+  --sombra1   : rgba(111,111,111,.2);
+  --sombra2   : rgba(255,255,255,1);
+  --auxiliar1 : #DFAC12;
+  --auxAmarillo: rgba(223,173,16,.2);
+  --auxiliar2 : #00814A;
 
-* {
-  box-sizing: border-box;
+  --marcado : rgb(rgb(0, 204, 255));
+
+  --tipo-principal  : Helvetica, Arial, sans-serif;
+  --tipo-secundaria : 'Open Sans', sans-serif;
+  --tipo-terciaria  : 'Roboto', sans-serif;
+  --tipo-erasdemi   : 'ITC Eras';
+
 }
 
 @media (prefers-color-scheme: dark) {
@@ -23,4 +30,107 @@ a {
     color: white;
     background: black;
   }
+}
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+@media (prefers-contrast: high){
+  :root{}
+}
+/* Reseteamos los margin y paddings de todas las etiquetas */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  vertical-align: baseline;
+}
+/* Configuramos anclas suaves */
+html {
+  scroll-behavior: smooth;
+}
+body {
+  position: relative;
+  min-height  : 100vh;
+  font-size   : 100%;
+  font-family : var(--tipo-principal);
+  color       : var(--negro);
+  /* opcional */ line-height: 1.4em;
+  /* opcional */ hyphens: auto;
+  /* opcional */ font-smooth: always;
+  /* opcional */ -webkit-font-smoothing: antialiased;
+  /* opcional */ -moz-osx-font-smoothing: grayscale;
+}
+
+/* Evitamos problemas con las imagenes */
+img , picture , video , iframe , figure{
+  max-width: 100%;
+  width: 100%;
+  display: block;
+  /* opcional */ object-fit: cover;        
+  /* opcional */ object-position: center center;
+}
+
+/* Reseteamos los enlaces para funcionar como cajas... */
+a {
+  display: block;
+  text-decoration: none;
+  color:inherit;
+  font-size:inherit;
+}
+/* ... excepto los que se encuentran en párrafos */
+p a {
+  display: inline;
+}
+
+/* Quitamos los puntos de los <li> */
+li {
+  list-style-type: none;
+}
+
+/* Desactivamos estilos por defecto de las principales etiquetas de texto */
+h1 , h2 , h3 , h4 , h5 , h6 , p ,span , a , strong , blockquote , i , b , u , em {
+  font-size: 1em;
+  font-weight: inherit;
+  font-style: inherit;
+  text-decoration: none;
+  color:inherit;
+}
+/* Evitamos problemas con los pseudoelementos de quotes */
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+/* Configuramos el texto que seleccionamos */
+::selection {
+  background-color: var(--negro);
+  color: var(--blanco);
+}
+
+/* Nivelamos problemas de tipografías y colocación de formularios */
+form , input, textarea, select , button , label{
+    font-family: inherit;
+    font-size: inherit;
+    hyphens: auto;
+    background-color: transparent;
+    color:inherit;
+    display: block;
+    /* opcional */ appearance: none;
+}
+
+/* Reseteamos las tablas */
+table , tr , td {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Evitamos problemas con los SVG */
+svg{
+    width: 100%;
+    display: block;
+    fill: currentColor;
 }

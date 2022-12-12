@@ -1,0 +1,26 @@
+.header{
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    border-bottom: solid 1px blue;
+    display: flex;
+    justify-content: center;
+    font-family: var(--tipo-principal);
+    font-weight: 800;
+    color: red;
+    background-color: silver;
+}
+
+.header nav{
+}
+
+.header ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.header li{
+    margin: .5rem 2rem;
+}
