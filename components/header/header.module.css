@@ -12,9 +12,6 @@
     z-index: 6;
 }
 
-.header nav{
-}
-
 .header ul{
     display: flex;
     align-items: center;
@@ -24,4 +21,8 @@
 
 .header li{
     margin: .5rem 2rem;
+}
+
+.header Link{
+    color:red;
 }
