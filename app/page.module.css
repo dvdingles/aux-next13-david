@@ -81,6 +81,8 @@
 .card:active {
   color: #0070f3;
   border-color: #0070f3;
+  transform: rotateY(360);
+  
 }
 
 .card h2 {
@@ -148,4 +150,19 @@
   opacity: .8;
   mix-blend-mode: multiply;
   
+}
+
+.prueba{
+  color: red;
+  cursor: pointer;
+  /* transition: all 3s ease; */
+}
+
+.prueba :hover,
+.prueba :active,
+.prueba :focus{
+  
+  /* transform: rotateX(360deg); */
+  color: blue;
+
 }

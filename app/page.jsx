@@ -37,11 +37,16 @@ export default function Home() {
             <p>Deploy your Next.js site to a public URL with Vercel.</p>
           </a>
         </div>
+
+
+        <div className={styles.prueba}>PRUEBA</div>
       </main>
 
-      <video className={styles.video} preload='true' muted autoPlay loop>
+
+
+      {/* <video className={styles.video} preload='true' muted autoPlay loop>
         <source src='/cajas.mp4' type='video/mp4'/>
-      </video>
+      </video> */}
 
       <div className={styles.capa} />
 
